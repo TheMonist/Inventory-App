@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Philosophy Books</title>
+    </head>
+    <body>
+        <h1>Books</h1>
+        <ul>
+            <% books.forEach(book => { %>
+                <li>
+                    <h2><%= book.title %></h2>
+                    <p><%= book.author_first %></p>
+                    <p><%= book.author_last %></p>
+                    <p><%= book.year_pub %></p>
+                    <p><%= book.publisher %></p>
+                    <p><%= book.specialty %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
